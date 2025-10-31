@@ -12,7 +12,8 @@ Cloud SQL (MySQL) → stores car listings with incremental updates
 Pub/Sub → publishes daily auction updates for downstream systems
 
 🧩 Data Flow Overview
- <img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/9749e4b8-cb92-469f-a4b5-ffe911c14bc2" />
+
+<img width="1024" height="812" alt="Gemini_Generated_Image_b1dkb3b1dkb3b1dk" src="https://github.com/user-attachments/assets/defd9675-7231-4714-985c-babdd0e1ac60" />
 
 🧠 Components
 1. scrape_listings.py
