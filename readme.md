@@ -12,24 +12,7 @@ Cloud SQL (MySQL) → stores car listings with incremental updates
 Pub/Sub → publishes daily auction updates for downstream systems
 
 🧩 Data Flow Overview
- ┌──────────────────────┐
- │  scrape_listings.py  │  → Scrapes car auction data
- └──────────┬───────────┘
-            │
-            ▼
- ┌──────────────────────┐
- │  transfer_files.py   │  → Moves CSV from source → destination GCS bucket
- └──────────┬───────────┘
-            │
-            ▼
- ┌──────────────────────┐
- │   publish_data.py    │  → Publishes new listings to Pub/Sub
- └──────────┬───────────┘
-            │
-            ▼
- ┌──────────────────────────────┐
- │   Apache Airflow DAG (GCP)   │  → Schedules & orchestrates all steps
- └──────────────────────────────┘
+ <img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/9749e4b8-cb92-469f-a4b5-ffe911c14bc2" />
 
 🧠 Components
 1. scrape_listings.py
