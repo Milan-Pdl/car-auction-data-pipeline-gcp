@@ -11,9 +11,6 @@ from google.cloud import storage
 from sqlalchemy import create_engine, text
 from urllib.parse import quote_plus
 
-# ------------------------
-# Scraping function
-# ------------------------
 def scrape_to_df():
     """This function will scrap carauction data and return the df"""
     base_url = "https://www.citymotorauction.com.au/search_results.aspx?sitekey=CTY&make=All+Makes&model=All+Models"
